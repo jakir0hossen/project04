@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-
 import 'package:project04/screen/main%20manu/mainScreen.dart';
+
+
+
 import 'package:project04/screen/onboarding/pinVerificationScreen.dart';
 import 'package:project04/screen/onboarding/setPasswordScreen.dart';
 import 'package:project04/screen/profile/ProfilePage.dart';
@@ -26,8 +27,9 @@ class MyApp extends StatelessWidget{
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(primaryColor: Colors.blueAccent),
       title: "Click A Event",
-      initialRoute: '/profilePage',
+      initialRoute: '/mainScreen',
       routes: {
         '/splashScreen':(context)=> splashScreen(),
         '/login':(context)=> loginScreen(),
