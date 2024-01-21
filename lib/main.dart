@@ -7,6 +7,7 @@ import 'package:project04/screen/main%20manu/mainScreen.dart';
 import 'package:project04/screen/onboarding/pinVerificationScreen.dart';
 import 'package:project04/screen/onboarding/setPasswordScreen.dart';
 import 'package:project04/screen/profile/ProfilePage.dart';
+import 'navbar.dart';
 import 'screen/onboarding/emailVerificationScreen.dart';
 import 'screen/onboarding/loginScreen.dart';
 import 'screen/onboarding/registrationScreen.dart';
@@ -38,7 +39,8 @@ class MyApp extends StatelessWidget{
         '/setPassword':(context)=> setPasswordScreen(),
         '/pinVerification':(context)=> pinVerificationScreen(),
         '/profilePage':(context)=> ProfilePage(),
-        '/mainScreen':(context)=> mainScreen()
+        '/mainScreen':(context)=> mainScreen(),
+        '/Navbar':(context)=> Navbar(),
 
       },
     );

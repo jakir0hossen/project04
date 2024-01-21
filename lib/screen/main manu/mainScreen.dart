@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import '../../navbar.dart';
 import 'homePage.dart';
 
 class mainScreen extends StatefulWidget {
@@ -15,6 +16,7 @@ class _mainScreenState extends State<mainScreen> {
   @override
   Widget build(BuildContext context) {
      return Scaffold(
+       drawer: Navbar(),
        appBar: AppBar(
          backgroundColor: Colors.blueAccent,
          title: Text("Click A Event",style: TextStyle(color: Colors.white),),
