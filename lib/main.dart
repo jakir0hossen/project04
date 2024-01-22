@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:project04/screen/main%20manu/calander.dart';
 import 'package:project04/screen/main%20manu/mainScreen.dart';
 
 
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget{
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primaryColor: Colors.blueAccent),
       title: "Click A Event",
-      initialRoute: '/mainScreen',
+      initialRoute: '/Calendar',
       routes: {
         '/splashScreen':(context)=> splashScreen(),
         '/login':(context)=> loginScreen(),
@@ -41,6 +42,8 @@ class MyApp extends StatelessWidget{
         '/profilePage':(context)=> ProfilePage(),
         '/mainScreen':(context)=> mainScreen(),
         '/Navbar':(context)=> Navbar(),
+        '/Calendar':(context)=> Calendar(),
+
 
       },
     );
